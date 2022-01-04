@@ -1,0 +1,2 @@
+# deb https://deb.debian.org/debian/ unstable main non-free contrib
+# deb http://liquorix.net/debian bullseye main

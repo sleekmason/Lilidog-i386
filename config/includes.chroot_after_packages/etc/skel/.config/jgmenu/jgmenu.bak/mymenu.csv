@@ -1,0 +1,111 @@
+Terminal,           x-terminal-emulator,       utilities-terminal
+^sep()
+Thunar,             thunar,           /usr/share/icons/ld-icons/Thunar.png
+Firefox,            firefox,          firefox-esr
+Thunderbird,        thunderbird,      thunderbird
+^sep()
+Quick Grab,^checkout(quickgrab),applications-other
+^sep()
+Debian,^pipe(jgmenu_run apps),debian-logo
+^sep()
+Toggles,^checkout(toggles),object-flip-horizontal
+Utilities,^checkout(utilities),applications-utilities
+Configuration,^checkout(configuration),preferences-system
+^sep()
+Restart,    openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_reboot.png
+Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png
+
+^tag(quickgrab)
+Theme Folders,^checkout(themes),folder
+Root Folders,^checkout(rootfiles),folder
+Writer,             libreoffice,                       libreoffice-writer
+Smplayer,           smplayer,                          smplayer
+Mousepad,           mousepad,                          accessories-text-editor
+Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
+Gpicview,           gpicview,                          gpicview
+Pragha,             pragha,                            pragha
+Gimp,               gimp,                              gimp
+Development,^checkout(development),applications-development
+
+^tag(development)
+Meld,               meld,                              document-properties
+Geany,              geany,	                       geany
+Icon Browser,       yad-icon-browser,                  galternatives
+
+^tag(utilities)
+Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
+Htop,               x-terminal-emulator -T 'Htop' -e htop,                    htop
+Gparted,            gksudo gparted,                   gparted
+Quick Info,         x-terminal-emulator -T 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
+Transmission,       transmission-gtk,                 transmission
+Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
+Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
+App Alternatives,   galternatives,                    preferences-system
+Color Chooser,      yad --color,                      yad
+Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
+Luckybackup,        export QT_QPA_PLATFORMTHEME=gtk2 && luckybackup,  luckybackup
+HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
+Galculator,         galculator,                       galculator
+Synaptic,           gksudo synaptic,                  synaptic
+Extras,             ^checkout(extras),                 applications-system
+
+^tag(extras)
+Install Games,^checkout(games-install),applications-utilities
+Install Qemu,             x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-utilities
+Install Libreoffice,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities 
+Install Etcher USB Maker, x-terminal-emulator -T 'Etcher Installer' -e bash -c "etcher-installer; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
+Install Kernel Packages,  x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
+Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+
+^tag(games-install)
+Install Games Pack,       x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
+Install Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
+
+^tag(toggles)
+Wbar,                toggle.wbar,                                   object-flip-horizontal
+Conky,               $HOME/.config/conky/scripts/conky-chooser,     object-flip-horizontal
+Gammy,               toggle.gammy,                                  object-flip-horizontal
+Clipboard,           toggle.parcellite,                             object-flip-horizontal
+Hotcorners,          toggle.ld,                                     object-flip-horizontal
+Random BG,           toggle-wallpaper-random,                       object-flip-horizontal
+Screensaver,         toggle.xscreensaver,                           object-flip-horizontal
+Tint2 Panel,         toggle.tint2,                                  object-flip-horizontal
+Fbpanel,             toggle.fbpanel,                                object-flip-horizontal
+Picom,               toggle.picom,                                  object-flip-horizontal
+Xkill,               xkill,                                         edit-delete
+
+^tag(rootfiles)
+/etc,                     gksudo thunar /usr/share,               folder-documents
+/etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,  folder-documents 
+/usr/share,               gksudo thunar /usr/share,               folder-documents
+/usr/bin,                 gksudo thunar /usr/bin,                 folder-documents
+/usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
+
+^tag(themes)
+Lilidog Theme Scripts,    thunar ~/.config/lilidog-themes,               folder-documents
+Xfce4 Term Colors,        thunar /usr/share/xfce4/terminal/colorschemes, folder-documents
+Geany Themes,             thunar /usr/share/geany/colorschemes,          folder-documents
+Icons,                    thunar /usr/share/icons,                       folder-documents
+Fonts,                    thunar /usr/share/fonts,                       folder-documents 
+GTK Themes,               thunar /usr/share/themes,                      folder-documents  
+Openbox Themes,           thunar /usr/share/themes,                      folder-documents
+Grub Backgrounds,         thunar ~/Pictures/grub-bg,                     folder-documents
+
+^tag(configuration)
+Quick Theme Changer,      ld-theme-changer,                                                     preferences-system
+Wallpaper Changer,        feh-set-wallpaper,                                                    feh
+Settings-Manager,         xfce4-settings-manager,                                               preferences-desktop-theme
+Power Manager,            xfce4-power-manager-settings,                                         applications-system  
+Openbox Conf,             obconf,                                                               obconf
+Jgmenu Conf,              mousepad ~/.config/jgmenu/README & thunar ~/.config/jgmenu,           document-properties
+Conky Conf,               thunar ~/.config/conky,                                               document-properties
+Urxvt Conf,               mousepad ~/.Xresources,                                               utilities-terminal
+Tint2 Conf,               tint2conf,                                                            tint2
+Picom Conf,               mousepad ~/.config/picom.conf,                                        document-properties
+Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
+Fbpanel Conf,             mousepad ~/.config/fbpanel/default,                                   preferences-other
+Xbindkeys Conf,           xbindkeys-config,                                                     document-properties
+Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                                        document-properties
+Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,                     applications-games 
+Xfce4-terminal Themes,    ld-term-changer,                                                      utilities-terminal
+Grub Background Changer,  x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme

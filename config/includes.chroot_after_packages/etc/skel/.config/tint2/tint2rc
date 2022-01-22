@@ -166,7 +166,7 @@ launcher_tooltip = 1
 
 #-------------------------------------
 # Clock
-time1_format = %d %b %I:%M
+time1_format = %d %b %H:%M
 time2_format = 
 time1_font = Liberation Sans 12
 time1_timezone = 

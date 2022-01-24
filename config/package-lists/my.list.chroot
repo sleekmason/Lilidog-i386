@@ -1,4 +1,3 @@
-abiword
 acpi
 adwaita-icon-theme
 alsa-oss
@@ -95,6 +94,7 @@ hddtemp
 hdparm
 htop
 hunspell-en-us
+hyphen-en-us
 imagemagick
 intel-microcode
 inxi
@@ -108,6 +108,8 @@ libfm-modules
 libinput-tools
 libnotify-bin
 libqt5svg5
+libreoffice-gtk3
+libreoffice-writer
 lightdm
 lightdm-gtk-greeter-settings
 lm-sensors

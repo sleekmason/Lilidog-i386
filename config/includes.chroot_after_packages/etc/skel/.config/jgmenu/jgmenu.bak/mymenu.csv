@@ -35,22 +35,22 @@ Geany,              geany,	                           geany
 Icon Browser,       yad-icon-browser,                  galternatives
 
 ^tag(utilities)
-Wallpaper Maker,    ^checkout(clickpick),              applications-utilities
-Screenshot,         xfce4-screenshooter,               org.xfce.screenshooter
+Wallpaper Maker,    ^checkout(clickpick),             applications-utilities
+Screenshot,         xfce4-screenshooter,              org.xfce.screenshooter
 Htop,               x-terminal-emulator -T 'Htop' -e htop,                    htop
 Gparted,            gksudo gparted,                    gparted
 Quick Info,         x-terminal-emulator -T 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
-Transmission,       transmission-gtk,                     transmission
-Color Chooser,      yad --color,                       org.xfce.settings.color
+Transmission,       transmission-gtk,                 transmission
+Color Chooser,      yad --color,                      org.xfce.settings.color
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
-App Alternatives,   galternatives,                     preferences-system
+App Alternatives,   galternatives,                    preferences-system
 Lucky Backup,       export QT_QPA_PLATFORMTHEME=gtk2 && luckybackup,  luckybackup
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
-Galculator,         galculator,                        galculator
-Synaptic,           gksudo synaptic,                   synaptic
-Extras,             ^checkout(extras),                 applications-system
+Galculator,         galculator,                       galculator
+Synaptic,           gksudo synaptic,                  synaptic
+Extras,             ^checkout(extras),                applications-system
 
 ^tag(clickpick)
 Clickpick Single,   clickpick,                        gpick
@@ -62,22 +62,15 @@ Install Games,^checkout(games-install),applications-utilities
 Install Graphics,^checkout(graphics-install),applications-utilities
 Install Browsers,^checkout(browsers-install),applications-utilities
 Install Backports,        x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
-Install Libreoffice,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities
-Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Libreoffice,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities 
 Install Etcher USB Maker, x-terminal-emulator -T 'Etcher Installer' -e bash -c "etcher-installer; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
 Install Kernel Packages,  x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
 Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Joplin Note,      x-terminal-emulator -T 'Joplin Note AppImage Installer' -e bash -c "joplin-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
 Install Bluetooth,        x-terminal-emulator -T 'Bluetooth Installer' -e bash -c "bluetooth-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
-Install Pipewire,         x-terminal-emulator -T 'Pipewire Installer' -e bash -c "pipewire-installer; echo $'\n\nPress any key to close.'; read -srn1",               applications-utilities
-Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
 Install Qemu,             x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-utilities
-^sep()
-Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "pipewire-remover; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
 
 ^tag(games-install)
 Install Games Pack,       x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
-Install Minecraft,        x-terminal-emulator -T 'Minecraft Installer' -e bash -c "minecraft-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-games
 Install Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
 
 ^tag(graphics-install)
@@ -122,7 +115,7 @@ Tint2 Bright,          tint2-bright,                                  object-fli
 
 ^tag(rootfiles)
 /etc,                     gksudo thunar /etc,                     folder-documents
-/etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,  folder-documents
+/etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,  folder-documents 
 /usr/share,               gksudo thunar /usr/share,               folder-documents
 /usr/bin,                 gksudo thunar /usr/bin,                 folder-documents
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents

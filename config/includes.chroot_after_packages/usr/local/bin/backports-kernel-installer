@@ -32,7 +32,7 @@ echo ""
          
    [0;36mRepository added to /etc/apt/sources.list.d/bullseye-backports.list[0m"
    echo ""
-sudo apt install -t bullseye-backports linux-image-amd64 linux-headers-amd64 firmware-linux
+sudo apt install -t bullseye-backports linux-image-686-pae firmware-linux
    echo "-------------------------------------------------------------------------------"
    echo ""
    echo "[0;33mPlease reboot into your new kernel when able.[0m"

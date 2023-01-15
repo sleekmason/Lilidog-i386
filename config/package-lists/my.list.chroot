@@ -122,6 +122,7 @@ libnss-systemd
 libqt5svg5
 libreoffice-gtk3
 libreoffice-writer
+librsvg2-common
 lightdm
 lightdm-gtk-greeter-settings
 lm-sensors

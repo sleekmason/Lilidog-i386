@@ -112,7 +112,6 @@ iw
 jq
 kbd
 libavcodec-extra
-libblockdev-crypto2
 libexo-2-0
 libfile-mimeinfo-perl
 libfm-modules
@@ -124,7 +123,6 @@ libqt5svg5
 libreoffice-gtk3
 libreoffice-writer
 librsvg2-common
-libvolume-key1
 lightdm
 lightdm-gtk-greeter-settings
 lm-sensors
